@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay-Italic.ttf");
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PlayfairDisplay';
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+header img {
+    width: 100%;
+    height: 509;
+    object-fit: cover;
+}
+
+/* menu */
+nav {
+    position: relative;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.sticky-nav {
+    position: relative;
+    transition: position 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: position 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    line-height: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.title-home {
+    font-size: 28px;
+    margin-right: auto;
+    font-weight: bold;
+    transform: scale(1.2);
+
+}
+
+.sticky-nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* post-top */
+.post-top {
+    margin-top: 50px;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+.PHOTODIARY-post-top {
+    color: #c7c1b6;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.LEAVE-post-top {
+    color: #c7c1b6;
+    font-size: 16px;
+    margin-top: 50px;
+
+    margin-bottom: 200px;
+}
+
+.post-top h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #626262;
+    margin-bottom: 20px;
+}
+
+/* các item */
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.posts-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posts-item img {
+    width: 60%;
+    vertical-align: auto;
+    /* Đặt chiều rộng ảnh là 50% để có chiều ngang bằng nhau với phần chữ */
+}
+
+.posts-item .sub {
+    width: 60%;
+    /* Đặt chiều rộng của phần chữ là 50% */
+    margin-top: 10px;
+}
+
+.posts-item .sub p {
+    color: #c7c1b6;
+    font-size: 16px;
+}
+
+.posts-item .sub a {
+    font-size: 30px;
+    color: #626262;
+    text-decoration: none;
+}
+
+.enter-email {
+    width: 100%;
+    height: 350px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.enter-email p {
+    font-size: 38px;
+    color: #333333;
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+}
+
+.form-email {
+    align-items: center;
+    background-color: #f0f0f0
+
+}
+
+form input[type="email"] {
+    width: 350px;
+    height: 36px;
+    border: none;
+
+    background-color: #f0f0f0; /* Màu nền mong muốn */
+    border-bottom: 1px solid #333333; /* Dòng border dưới */
+    padding: 5px;
+  }
+  form input:focus{
+    border-bottom: #333333;
+}
+form button {
+    width: 50px;
+    height: 36px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #333333; /* Dòng border dưới */
+    margin: 10px;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #FFF;
+    margin-top: 40px;
+    align-items: center;
+    height: 100px;
+}
+.copyright{
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+
+}
+.follow-us{
+    display: flex;
+    justify-content: space-between;
+
+}
+.follow-us p{
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.follow-us a{
+    margin-left: 15px;
+}
