@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url("fonts/PlayfairDisplay-Italic.ttf");
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PlayfairDisplay';
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+    height: 509;
+    object-fit: cover;
+}
+
+
+/* menu */
+nav {
+    position: relative;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.sticky-nav {
+    position: relative;
+    transition: position 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: position 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    line-height: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 20px;
+    color: black;
+}
+
+.title-home {
+    font-size: 28px;
+    margin-right: auto;
+    font-weight: bold;
+    transform: scale(1.2);
+
+}
+
+.sticky-nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Main*/
+main {
+    display: flex;
+}
+
+.main-right {
+    width: 80%;
+}
+
+.main-left {
+    width: 30%;
+
+}
+
+/* post-top */
+.post-top {
+    margin-top: 50px;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+.PHOTODIARY-post-top {
+    color: #c7c1b6;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+.post-top h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #626262;
+    margin-bottom: 20px;
+}
+
+.post-top img {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.p-2 {
+    width: 70%;
+    margin-top: 20px;
+    font-style: italic;
+    align-items: center;
+    margin: auto;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* menu horizontal */
+.menu-horizontal {
+    background-color: #f0f0f0;
+    margin-top: 40px;
+}
+
+.title-menu-horizontal {
+    margin-left: 40px;
+    background-color: #f0f0f0;
+    margin-top: 80px;
+
+
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f0f0f0;
+    height: 300px;
+}
+
+.posts-item-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: #f0f0f0;
+
+}
+
+.posts-item-menu img {
+    width: 60%;
+    vertical-align: auto;
+    transition: transform 0.3s ease, width 0.3s ease;
+
+    /* Đặt chiều rộng ảnh là 50% để có chiều ngang bằng nhau với phần chữ */
+}
+.posts-item:hover img {
+    transform: scale(1.2);
+    width: 62%;
+  }
+.posts-item-menu .sub {
+    width: 60%;
+    /* Đặt chiều rộng của phần chữ là 50% */
+    margin-top: 10px;
+    background-color: #f0f0f0;
+
+}
+
+.posts-item-menu .sub p {
+    color: #c7c1b6;
+    font-size: 16px;
+}
+
+.posts-item-menu .sub a {
+    font-size: 18px;
+    color: #626262;
+    text-decoration: none;
+    background-color: #f0f0f0;
+
+}
+
+.desctiption {
+    margin-top: 10px;
+}
+
+/* side-bar */
+.news-posts {
+    margin-top: 100px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #c7c1b6;
+
+}
+
+.posts-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+    border-bottom: 2px solid #b5b1b1;
+    padding-bottom: 40px;
+    /* Thay đổi #000 thành màu sắc bạn muốn sử dụng cho viền */
+}
+
+.posts-item img {
+    width: 80%;
+    vertical-align: auto;
+    /* Đặt chiều rộng ảnh là 50% để có chiều ngang bằng nhau với phần chữ */
+    transition: transform 0.3s ease, width 0.3s ease;
+
+}
+.posts-item:hover img {
+    transform: scale(1.2);
+    width: 82%;
+  }
+.posts-item .sub {
+    width: 80%;
+    /* Đặt chiều rộng của phần chữ là 50% */
+    margin-top: 10px;
+}
+
+.posts-item .sub p {
+    color: #c7c1b6;
+    font-size: 16px;
+}
+
+.posts-item .sub a {
+    font-size: 24px;
+    color: #626262;
+    text-decoration: none;
+}
+
+.desctiption {
+    margin-top: 10px;
+}
+
+/* posts top */
+.top-posts {
+    width: 90%;
+    margin-left: 50px;
+}
+.top-post-title p {
+    font-size: 20px;
+    color: #c7c1b6;
+
+}
+
+.top-posts li {
+    margin-top: 40px;
+    border-bottom: 1px solid #b5b1b1;
+    padding-bottom: 5px;
+}
+
+.top-posts li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.top-posts li p {
+    font-size: 12px;
+    color: #c7c1b6;
+}
+
+iframe{
+    width: 100%;
+    height: 350px;
+    margin: 30px;
+}
+
+.slide-bar-img {
+    width: 80%;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 40px;
+    
+}
+.space {
+    height: 200px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #FFF;
+    margin-top: 40px;
+    align-items: center;
+    height: 100px;
+}
+
+.copyright {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.follow-us {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.follow-us p {
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.follow-us a {
+    margin-left: 15px;
+}
